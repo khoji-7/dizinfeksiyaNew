@@ -1,0 +1,73 @@
+
+.guaranteParent{
+    margin: 0;
+    }
+    .guaranteParent .container{
+        max-width: 1440px;
+        margin: auto;
+        width: 95%;
+        min-height: 585px;
+        border-radius: 16px;
+        background: radial-gradient(498.32% 130.33% at 92.87% 11.25%, #33A9FF 0%, #33FFF3 100%);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 20px;
+        
+    }
+    .guarenteImg{
+        max-width: 528px;
+        max-height: 510px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    .guaranteTitle{
+        max-width: 643px;
+        color: #fafafa;
+        font-family: Unbounded;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        margin-top: 12px;
+        margin-bottom: 50px;
+    }
+    .guaranteBtn{
+        border: none;
+        background: rgb(33, 55, 251);
+        overflow: hidden;
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: Unbounded;
+        cursor: pointer;
+        transition: all .3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+    }
+@media  screen and (max-width: 980px) {
+    .guarenteImg{
+        display: none;;
+    }
+    .guaranteParent{
+        margin: 0;
+        }
+        .guaranteParent .container{
+            max-width: 95%;
+            margin: auto;
+            width: 100%;
+            min-height: 585px;
+            border-radius: 16px;
+            background: radial-gradient(498.32% 130.33% at 92.87% 11.25%, #33A9FF 0%, #33FFF3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 20px;
+            
+        }
+}

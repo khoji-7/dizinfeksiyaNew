@@ -1,0 +1,167 @@
+
+/* font */
+
+
+/* header */
+.contaiener {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+
+}
+
+/* header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+    gap: 30px;
+    margin: auto;
+    padding: 80px 0 0 0;
+    position: relative;
+}
+.headerCaptionTitle {
+    max-width: 650px;
+    font-size: 70px;
+    min-height: 0;
+    color: #093fb3;
+    font-family: Unbounded, sans-serif;
+    font-weight: 500;
+}
+.headerCaptionText {
+    max-width: 400px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #272121;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.headerImg {
+    max-width: 674px;
+    width: auto;
+    height: 540px;
+}
+.headerImgPos {
+    position: absolute;
+    top: 205px;
+    left: 367px;
+    width: 308px;
+    height: 240px;
+}
+/* about */
+.aboutParent {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
+    padding: 80px 0;
+}
+.aboutTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 32px;
+    color: #020c31;
+    font-family: Unbounded;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.aboutCardParent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.aboutCardImg {
+    width: 80px;
+    height: 80px;
+}
+.aboutCardTitle {
+    max-width: 360px;
+    color: #020c31;
+    font-family: Unbounded;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.aboutCardText {
+    width: 300px;
+    color: #676d83;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media screen and (max-width:1210px){
+    .headerImg{
+        display: none;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+    margin: auto;
+
+    position: relative;
+    }
+    .headerParent{
+        display: flex;
+    }
+    .headerParent .container{
+        width: 1210px;
+        max-width: 90%;
+        margin: auto;
+
+    }
+    .headerCaption{
+        width: 100%;
+        max-width: 90%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        background-image: url("https://www.dezinfeksiyatashkent.uz/assets/hero-9df3d259.jpg");
+    }
+
+    .headerCaptionTitle {
+        
+        max-width: 900px;
+        font-size: 70px;
+        min-height: 0;
+        color: white;
+        font-family: Unbounded, sans-serif;
+        font-weight: 500;
+    }
+    .headerCaptionText {
+        max-width: 900px;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    
+
+    .headerImgPos{
+        display: none;;
+    }
+    .aboutCardParent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:635px) {
+    .aboutCardParent{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}

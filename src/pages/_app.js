@@ -1,5 +1,26 @@
-import "@/styles/globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/globals.css";
+import "./i18n.js";
+import 'aos/dist/aos.css'; // AOS CSS
+import AOS from 'aos'; // AOS JS
 
-export default function App({ Component, pageProps }) {
+import { useEffect } from "react";
+
+function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    AOS.init({
+      duration: 1000, // animatsiya davomiyligi (ms)
+      offset: 200, // skroll qilingan masofa (px)
+      once: true,
+      mirror:true,// animatsiya faqat bir marta ishlashi kerak
+    });
+
+    // AOS-ni sahifa har safar yangilanganda qayta yuklash
+    AOS.refresh();
+  }, []);
+
   return <Component {...pageProps} />;
 }
+
+export default MyApp;
