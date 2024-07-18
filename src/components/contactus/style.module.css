@@ -74,6 +74,10 @@
     cursor: pointer;
     margin-top: 50px;
 }
+.contactBtn:hover{
+    background: linear-gradient(0deg, rgb(101, 101, 127) 0%, rgb(55, 59, 71) 100%);
+
+}
 .contactImg{
     width: 461px;
     height: 437px;

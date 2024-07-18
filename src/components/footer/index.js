@@ -2,6 +2,7 @@ import cls from "./style.module.css"
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import ArrowOutwardSharpIcon from '@mui/icons-material/ArrowOutwardSharp';
 import FmdGoodSharpIcon from '@mui/icons-material/FmdGoodSharp';
+
 export default function Footer (){
     return(
         <div className={cls.container}>

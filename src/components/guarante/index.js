@@ -1,5 +1,6 @@
  import cls from "./style.module.css"
  import { useTranslation } from "react-i18next";
+
  
  
 
@@ -15,7 +16,7 @@
             <p className={cls.guaranteTitle}>
                 {t("guaranteTitle")}
             </p>
-            <button className={cls.guaranteBtn}> <a href="#contact">{t("bog'lanish")}</a></button>
+            <button className={cls.guaranteBtn}> <a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
             </div>
         </div>
     </div>  

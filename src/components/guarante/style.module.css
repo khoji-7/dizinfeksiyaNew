@@ -50,6 +50,10 @@
         display: inline-block;
         outline: none;
     }
+    .guaranteBtn:hover{
+        background: linear-gradient(0deg, rgb(102, 101, 181) 0%, rgb(52, 81, 159) 100%);
+
+    }
 @media  screen and (max-width: 980px) {
     .guarenteImg{
         display: none;;

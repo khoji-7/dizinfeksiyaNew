@@ -7,6 +7,7 @@ import ContactUs from "@/components/contactus";
 import Footer from "@/components/footer";
 import { useTranslation } from "react-i18next";
 
+
 export default function Home() {
   const { t, i18n } = useTranslation();
   const handleChange = (event) => {
@@ -50,7 +51,7 @@ export default function Home() {
                 <option value="en">english</option>
               </select>
               <button className="navbarBtn">
-                <a href="#service">{t("bog'lanish")}</a>
+                <a href="#service" className="BtnLink">{t("bog'lanish")}</a>
               </button>
             </div>
             <button
@@ -100,7 +101,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <button className="navbarBtnn">
-                  <a href="#contact"> {t("bog'lanish")} </a>
+                  <a href="#contact" className="BtnLink"> {t("bog'lanish")} </a>
                 </button>
               </div>
             </div>

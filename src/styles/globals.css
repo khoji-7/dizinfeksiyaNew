@@ -5,6 +5,7 @@
     font-family: SF Pro Display;
     src: url(../../public/font/sf-pro-display/SFPRODISPLAYREGULAR.OTF);
 }
+
 .body{
     display: flex;
     flex-direction: column;
@@ -27,17 +28,9 @@
     margin-left: 25px;
     color: #00000098;
 }
-a{
-    text-decoration: none;
-    font-family: Unbounded;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    text-transform: capitalize;
-    font: 20px sans-serif;
-    font-weight: 500;
-    color: white;
-    text-align: center;
+.links:hover{
+    color: rgb(102, 101, 181) ;
+
 }
 
 .navbar { 
@@ -69,31 +62,58 @@ a{
     margin-left: 25px;
     color: #00000098;
 }
+
+
+.BtnLink{
+    text-decoration: none;
+    font-family: Unbounded;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-transform: capitalize;
+    font: 20px sans-serif;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
 .navbarBtn{
     width: 200px;
     height: 60px;
     color: #fff;
     border-radius: 25px;
-    padding: 10px 25px;
-    font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
+    text-align: center;
+    max-width: 190px;
+    height: 50px;
+    border: none;
     background: rgb(33, 55, 251);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: Unbounded;
+    color: #fff;
+    overflow: hidden;
+    margin: auto;
 }
+
 .navbarBtnn{
     width: 200px;
     height: 60px;
     color: #fff;
     border-radius: 25px;
-    padding: 10px 25px;
-    font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 190px;
+    height: 50px;
+    border: none;
     background: rgb(33, 55, 251);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: Unbounded;
+    color: #fff;
+    overflow: hidden;
+}
+.navbarBtnn:hover{
+    background: linear-gradient(0deg, rgb(102, 101, 181) 0%, rgb(52, 81, 159) 100%);
+}
+.navbarBtn:hover{
+    background: linear-gradient(0deg, rgb(102, 101, 181) 0%, rgb(52, 81, 159) 100%);
 }
 .select {
     background: none;

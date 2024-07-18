@@ -2,6 +2,7 @@ import cls from "./style.module.css"
 import { useTranslation } from "react-i18next";
 
 
+
 const Banner = () =>{
     
     const { t ,i18n } = useTranslation();
@@ -13,7 +14,7 @@ const Banner = () =>{
                 <p className={cls.bannerText}>
                     {t("bannerText")}
                 </p>
-                <button className="navbarBtnn"><a href="#contact">{t("bog'lanish")}</a></button>
+                <button className="navbarBtnn"><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
             </div>
         </div>
     </div> 

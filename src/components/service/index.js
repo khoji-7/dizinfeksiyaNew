@@ -2,6 +2,7 @@ import cls from "./style.module.css"
 import { useTranslation } from "react-i18next";
 
 
+
 const Service = () => {
     
     const { t } = useTranslation();
@@ -67,7 +68,7 @@ const Service = () => {
                 <p className={cls.serviceTypeCardText}>
                     {t("klapalar1")}
                     </p>
-                    <button className={cls.serviceTypeCardBtn}><a href="#contact">{t("bog'lanish")}</a></button>
+                    <button className={cls.serviceTypeCardBtn}><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/klopi-6c1f42ef.jpg"
                     alt=""
@@ -77,7 +78,7 @@ const Service = () => {
             <div className={cls.serviceTypeCard}>
                 <p className={cls.serviceTypeCardTitle}>{t("tarakanlar")}</p>
                 <p className={cls.serviceTypeCardText}>{t("tarakanlar1")}</p>
-                <button className={cls.serviceTypeCardBtn}><a href="#contact">{t("bog'lanish")}</a></button>
+                <button className={cls.serviceTypeCardBtn}><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/tarakan-d8b430bd.jpg"
                     alt=""
@@ -90,7 +91,7 @@ const Service = () => {
                 <p className={cls.serviceTypeCardText}>
                     {t("chayon1")}
                 </p>
-                <button className={cls.serviceTypeCardBtn}><a href="#contact">{t("bog'lanish")}</a></button>
+                <button className={cls.serviceTypeCardBtn}><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/skarpion-6902a7a9.jpg"
                     alt=""
@@ -103,7 +104,7 @@ const Service = () => {
                 <p className={cls.serviceTypeCardText}>
                     {t("kemiruvchilar1")}
                     </p>
-                    <button className={cls.serviceTypeCardBtn}><a href="#contact">{t("bog'lanish")}</a></button>
+                    <button className={cls.serviceTypeCardBtn}><a href="#contact"className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/grizuni-de8c9315.jpg"
                     alt=""
@@ -116,7 +117,7 @@ const Service = () => {
                 <p className={cls.serviceTypeCardText}>
                     {t("burgalar1")}
                     </p>
-                    <button className={cls.serviceTypeCardBtn}><a href="#contact">{t("bog'lanish")}</a></button>
+                    <button className={cls.serviceTypeCardBtn}><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/bloxi-7e06d020.jpg"
                     alt=""

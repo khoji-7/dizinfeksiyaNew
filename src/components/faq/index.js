@@ -45,7 +45,7 @@ function Faq() {
                                 aria-expanded='false'
                                 aria-controls='collapseTwo'
                             >
-                                {t("acordion2")}
+                                {t("acordion22")}
                             </button>
                         </h2>
                         <div
@@ -68,7 +68,7 @@ function Faq() {
                                 aria-expanded='false'
                                 aria-controls='collapseThree'
                             >
-                                {t("acordion2")}
+                                {t("acordion3")}
                             </button>
                         </h2>
                         <div
