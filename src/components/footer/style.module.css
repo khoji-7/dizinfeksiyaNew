@@ -1,4 +1,4 @@
-.container{
+.container {
     max-width: 1440px;
     margin: auto;
     width: 100%;
@@ -10,17 +10,19 @@
     flex-direction: row;
     gap: 100px;
 }
-.footerlogo{
+
+.footerlogo {
     max-width: 300px;
     max-height: 100px;
 }
-.footerText{
+
+.footerText {
     display: flex;
     flex-direction: row;
     gap: 30px;
-
 }
-.footerTextTitle{
+
+.footerTextTitle {
     color: #242825cc;
     font-family: sans-serif;
     font-size: 16px;
@@ -28,8 +30,10 @@
     font-weight: 500;
     line-height: normal;
 }
-@media screen and (max-width:750px) {
-    .container{
+
+/* 750px va kichikroq ekranlar uchun */
+@media screen and (max-width: 750px) {
+    .container {
         max-width: 95%;
         margin: auto;
         width: 100%;
@@ -42,5 +46,77 @@
         gap: 100px;
         justify-content: center;
     }
-    
+}
+
+/* 600px va kichikroq ekranlar uchun */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 95%;
+        margin: auto;
+        width: 100%;
+        padding-top: 50px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        border-top: 1.4px solid rgba(11, 11, 77, .5);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+    }
+}
+
+/* 480px va kichikroq ekranlar uchun */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        margin: auto;
+        width: 100%;
+        padding-top: 40px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        border-top: 1.4px solid rgba(11, 11, 77, .5);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .footerText {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerlogo {
+        max-width: 250px;
+        max-height: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+/* 375px va kichikroq ekranlar uchun */
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 95%;
+        margin: auto;
+        width: 100%;
+        padding-top: 30px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        border-top: 1.4px solid rgba(11, 11, 77, .5);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .footerText {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerlogo {
+        max-width: 200px;
+        max-height: 70px;
+        margin-bottom: 20px;
+    }
 }

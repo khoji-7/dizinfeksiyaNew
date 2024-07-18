@@ -1,77 +1,185 @@
-
-.guaranteParent{
+.guaranteParent {
     margin: 0;
+}
+
+.guaranteParent .container {
+    max-width: 1440px;
+    margin: auto;
+    width: 95%;
+    min-height: 585px;
+    border-radius: 16px;
+    background: radial-gradient(498.32% 130.33% at 92.87% 11.25%, #33A9FF 0%, #33FFF3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.guarenteImg {
+    max-width: 528px;
+    max-height: 510px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.guarantelogo{
+    width: 80px;
+    height: 80px;
+    
+}
+
+.guaranteTitle {
+    max-width: 643px;
+    color: #fafafa;
+    font-family: Unbounded;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+
+.guaranteBtn {
+    border: none;
+    background: rgb(33, 55, 251);
+    overflow: hidden;
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Unbounded;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+}
+
+
+.guaranteBtn:hover {
+    background: linear-gradient(0deg, rgb(102, 101, 181) 0%, rgb(52, 81, 159) 100%);
+}
+
+/* 980px va kichikroq ekranlar uchun */
+@media screen and (max-width: 980px) {
+    .guarenteImg {
+        display: none;
     }
-    .guaranteParent .container{
-        max-width: 1440px;
+    .guaranteBtn {
+        
         margin: auto;
-        width: 95%;
+    }
+    
+    .guaranteParent {
+        margin: 0;
+    }
+    .guarantelogo{
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+    .guaranteParent .container {
+        max-width: 95%;
+        margin: auto;
+        width: 100%;
         min-height: 585px;
         border-radius: 16px;
         background: radial-gradient(498.32% 130.33% at 92.87% 11.25%, #33A9FF 0%, #33FFF3 100%);
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         padding: 0 20px;
-        
     }
-    .guarenteImg{
-        max-width: 528px;
-        max-height: 510px;
-        object-fit: cover;
-        border-radius: 16px;
-    }
-    .guaranteTitle{
-        max-width: 643px;
-        color: #fafafa;
-        font-family: Unbounded;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 48px;
-        margin-top: 12px;
-        margin-bottom: 50px;
-    }
-    .guaranteBtn{
-        border: none;
-        background: rgb(33, 55, 251);
-        overflow: hidden;
-        width: 200px;
-        height: 60px;
-        color: #fff;
-        border-radius: 25px;
-        padding: 10px 25px;
-        font-weight: 500;
-        font-size: 20px;
-        font-family: Unbounded;
-        cursor: pointer;
-        transition: all .3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-    }
-    .guaranteBtn:hover{
-        background: linear-gradient(0deg, rgb(102, 101, 181) 0%, rgb(52, 81, 159) 100%);
+}
 
+/* 600px va kichikroq ekranlar uchun */
+@media screen and (max-width: 600px) {
+    .guaranteTitle {
+        max-width: 100%;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
     }
-@media  screen and (max-width: 980px) {
-    .guarenteImg{
-        display: none;;
+    .guarantelogo{
+        width: 80px;
+        height: 80px;
+        margin: auto;
     }
-    .guaranteParent{
-        margin: 0;
-        }
-        .guaranteParent .container{
-            max-width: 95%;
-            margin: auto;
-            width: 100%;
-            min-height: 585px;
-            border-radius: 16px;
-            background: radial-gradient(498.32% 130.33% at 92.87% 11.25%, #33A9FF 0%, #33FFF3 100%);
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 0 20px;
-            
-        }
+
+    .guaranteBtn {
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+        padding: 8px 20px;
+        margin: auto;
+    }
+
+    .guaranteParent .container {
+        padding: 0 10px;
+        justify-content: center;
+    }
+}
+
+/* 480px va kichikroq ekranlar uchun */
+@media screen and (max-width: 480px) {
+    .guaranteTitle {
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+    .guarantelogo{
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .guaranteBtn {
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
+        margin: auto;
+        padding: 6px 18px;
+    }
+
+    .guaranteParent .container {
+        min-height: 450px;
+        padding: 0 5px;
+        justify-content: center;
+    }
+}
+
+/* 375px va kichikroq ekranlar uchun */
+@media screen and (max-width: 375px) {
+    .guaranteTitle {
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 6px;
+        margin-bottom: 30px;
+    }
+    .guarantelogo{
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .guaranteBtn {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+        padding: 5px 16px;
+        margin: auto;
+    }
+
+    .guaranteParent .container {
+        min-height: 400px;
+        padding: 0 5px;
+        justify-content: center;
+    }
 }

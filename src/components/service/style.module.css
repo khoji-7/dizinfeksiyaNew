@@ -1,3 +1,5 @@
+/* Asosiy uslublar */
+
 .serviceParent {
     margin: 0;
 }
@@ -53,6 +55,7 @@
     max-width: 300px;
     max-height: 300px;
 }
+
 .serviceCardMain {
     max-width: 900px;
 }
@@ -77,30 +80,34 @@
     margin-top: 20px;
     padding: 0 10px;
 }
+
 /* service type */
 
 .serviceTypeParent {
     margin: auto;
 }
+
 .serviceTypeParent .container {
     max-width: 1440px;
     width: 100%;
     margin: auto;
     display: grid;
 }
+
 .serviceTypeCard {
     position: relative;
     display: flex;
     flex-direction: column;
     max-width: 443px;
+    width: 90%;
     height: 450px;
     border-radius: 12px;
     background: #f3f6f6;
-    margin-right: 16px;
     margin-top: 16px;
     padding: 20px;
     justify-content: space-between;
 }
+
 .serviceTypeCardTitle {
     text-transform: uppercase;
     color: #020c31;
@@ -110,6 +117,7 @@
     font-weight: 700;
     line-height: normal;
 }
+
 .serviceTypeCardText {
     color: #495157;
     font-family: Unbounded;
@@ -119,6 +127,7 @@
     line-height: normal;
     margin-top: 20px;
 }
+
 .serviceTypeCardBtn {
     color: #fff;
     border-radius: 25px;
@@ -133,10 +142,11 @@
     color: #fff;
     overflow: hidden;
 }
-.serviceTypeCardBtn:hover{
-    background: linear-gradient(0deg, rgb(102, 101, 181) 0%, rgb(52, 81, 159) 100%);
 
+.serviceTypeCardBtn:hover {
+    background: linear-gradient(0deg, rgb(102, 101, 181) 0%, rgb(52, 81, 159) 100%);
 }
+
 .serviceTypeCardimg {
     width: 100px;
     height: 100px;
@@ -145,59 +155,180 @@
     top: 330px;
     left: 280px;
 }
-.serviceTypeCardParent{
+
+.serviceTypeCardParent {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-@media screen and (max-width:1210px)  {
-    .serviceTypeCardParent{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly;
-        max-width: 1190px;
-        margin: auto;
+
+/* Media Queries */
+
+/* 1280px dan katta ekranlar uchun */
+@media screen and (min-width: 1280px) {
+    .serviceTypeCardParent {
+        grid-template-columns: repeat(3, 1fr);
     }
-    
 }
-@media screen and (max-width:800px){
-    .serviceTypeCardParent{
-       display: grid;
-       grid-template-columns: 1fr;
-       margin: auto;
-       max-width: 700px;
-        
+
+/* 1024px yoki kichikroq ekranlar uchun */
+@media screen and (max-width: 1024px) {
+    .serviceTypeCardParent {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/* 800px yoki kichikroq ekranlar uchun */
+@media screen and (max-width: 800px) {
+    .serviceTypeCardParent {
+        grid-template-columns: 1fr;
+    }
+
     .serviceParent .container {
-        display: flex;
-        flex-direction: column;
         max-width: 800px;
         margin: auto;
-    }
-    
-    .serviceParent {
-        margin: 0;
-    }
-    
-    .serviceParent .container {
         display: flex;
         flex-direction: column;
     }
-    
+
     .service {
         margin: auto;
         width: 100%;
         max-width: 90%;
     }
-    .serviceCard{
+
+    .serviceCard {
         display: flex;
         flex-direction: column;
-        max-width : 760px;
+        max-width: 760px;
         margin: auto;
+        align-items: center;
+        text-align: center;
     }
+
     .serviceCardImg {
         max-width: 150px;
         max-height: 150px;
     }
-    
-    
+
+    .serviceTypeCardimg {
+        top: 200px;
+        left: 150px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* 600px yoki kichikroq ekranlar uchun */
+@media screen and (max-width: 600px) {
+    .serviceTitle {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .serviceText {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .serviceCard {
+        max-width: 500px;
+    }
+
+    .serviceCardImg {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+/* 480px yoki kichikroq ekranlar uchun */
+@media screen and (max-width: 480px) {
+    .serviceTypeCardParent {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: auto;
+        gap: 16px;
+    }
+
+    .serviceTypeCard {
+        position: relative;
+    }
+
+    .serviceTypeCardimg {
+        top: 55px;
+        left: 120px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .serviceTitle {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .serviceText {
+        max-width: 300px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .serviceCard {
+        max-width: 300px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .serviceCardImg {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+/* 365px yoki kichikroq ekranlar uchun */
+@media screen and (max-width: 365px) {
+    .serviceTypeCardParent {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        width: 90%;
+        margin: auto;
+        gap: 16px;
+    }
+
+    .serviceTypeCard {
+        max-width: 320px;
+        width: 90%;
+        margin: auto;
+        position: relative;
+    }
+
+    .serviceTypeCardimg {
+        top: 50px;
+        left: 120px;
+        width: 55px;
+        height: 55px;
+    }
+    .serviceTypeCardTitle{
+        font-size: 24px;
+    }
+
+    .serviceTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .serviceText {
+        max-width: 260px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .serviceCard {
+        max-width: 280px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .serviceCardImg {
+        max-width: 80px;
+        max-height: 80px;
+    }
 }

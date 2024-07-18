@@ -1,4 +1,4 @@
-.contactParent{
+.contactParent {
     display: flex;
     flex-direction: row;
     max-width: 1440px;
@@ -6,7 +6,8 @@
     width: 95%;
     padding: 0 30px;
 }
-.contactParent .container{
+
+.contactParent .container {
     max-width: 1440px;
     width: 100%;
     height: 550px;
@@ -18,7 +19,8 @@
     position: relative;
     padding: 0 24px;
 }
-.contact{
+
+.contact {
     max-width: 456px;
     min-height: 385px;
     background-color: #fff;
@@ -27,7 +29,10 @@
     display: flex;
     flex-direction: column;
 }
-.contactTitle{
+
+.contactTitle {
+    max-width: 456px;
+    width: 90%;
     text-transform: capitalize;
     color: #242825;
     font-family: Unbounded;
@@ -36,7 +41,8 @@
     font-weight: 700;
     line-height: 40px;
 }
-.contactInput{
+
+.contactInput {
     display: flex;
     align-items: center;
     outline: none;
@@ -55,7 +61,8 @@
     margin-top: 30px;
     color: #242825;
 }
-.contactBtn{
+
+.contactBtn {
     display: flex;
     width: 100%;
     align-items: center;
@@ -74,26 +81,137 @@
     cursor: pointer;
     margin-top: 50px;
 }
-.contactBtn:hover{
-    background: linear-gradient(0deg, rgb(101, 101, 127) 0%, rgb(55, 59, 71) 100%);
 
+.contactBtn:hover {
+    background: linear-gradient(0deg, rgb(101, 101, 127) 0%, rgb(55, 59, 71) 100%);
 }
-.contactImg{
+
+.contactImg {
     width: 461px;
     height: 437px;
 }
 
-
+/* 980px va kichikroq ekranlar uchun */
 @media screen and (max-width: 980px) {
-    .contactParent{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        max-width: 95%;
-        padding: 0 30px;
+    .contactParent {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
     }
-    .contactImg{
+
+    .contactParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contactImg {
+        display: none;
+    }
+}
+
+/* 768px va kichikroq ekranlar uchun */
+@media screen and (max-width: 768px) {
+    .contactParent {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .contactParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contactImg {
         display: none;
     }
 
+    .contact {
+        max-width: 100%;
+    }
+}
+
+/* 600px va kichikroq ekranlar uchun */
+@media screen and (max-width: 600px) {
+    .contactParent {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .contactParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contactImg {
+        display: none;
+    }
+
+    .contact {
+        max-width: 100%;
+    }
+}
+
+/* 480px va kichikroq ekranlar uchun */
+@media screen and (max-width: 480px) {
+    .contactParent {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .contactParent .container {
+        height: auto;
+        padding: 20px;
+    }
+    .contactTitle{
+        max-width: 460px;
+        width: 90%;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .contactImg {
+        display: none;
+    }
+
+    .contact {
+        max-width: 100%;
+    }
+}
+
+/* 375px va kichikroq ekranlar uchun */
+@media screen and (max-width: 375px) {
+    .contactParent {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .contactParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contactImg {
+        display: none;
+    }
+
+    .contact {
+        max-width: 100%;
+    }
+
+    .contactTitle {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .contactInput {
+        height: 45px;
+    }
+
+    .contactBtn {
+        height: 45px;
+        margin-top: 30px;
+    }
 }

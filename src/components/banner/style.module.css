@@ -1,7 +1,9 @@
+
 .bannerParent {
     display: flex;
     flex-direction: row;
 }
+
 .bannerParent .container {
     max-width: 1440px;
     margin: auto;
@@ -18,12 +20,14 @@
     border-radius: 16px;
     position: relative;
 }
-.banner{
-position: absolute;
-left: 700px;
-top: 200px;
+
+.banner {
+    position: absolute;
+    left: 700px;
+    top: 200px;
 }
-.bannerTitle{
+
+.bannerTitle {
     max-width: 558px;
     color: #fafafa;
     font-family: Unbounded;
@@ -33,7 +37,8 @@ top: 200px;
     line-height: 48px;
     margin-bottom: 20px;
 }
-.bannerText{
+
+.bannerText {
     max-width: 310px;
     color: #fff;
     font-family: sans-serif;
@@ -43,51 +48,156 @@ top: 200px;
     line-height: 24px;
     margin-bottom: 60px;
 }
-@media screen and (max-width:1210px){
+
+@media screen and (max-width: 1210px) {
     .bannerParent {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
+
     .bannerParent .container {
-       
-        margin: auto;
-        background-image: url(https://www.dezinfeksiyatashkent.uz/assets/hh-32dbdc9d.jpg);
-        width: 100%;
-        height: 600px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        object-fit: cover;
-        padding: 30px 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        border-radius: 16px;
-        position: relative;
-        
+        height: auto;
+        padding: 20px;
     }
-  .banner{
-    display: flex;
-    flex-direction: column;
-    position: static;
-  }
-    .bannerTitle{
-        max-width: 700px;
-        color: #fafafa;
-        font-family: Unbounded;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 48px;
-        margin-bottom: 20px;
+
+    .banner {
+        position: static;
+        margin-top: 20px;
     }
-    .bannerText{
+
+    .bannerTitle, .bannerText {
         max-width: 700px;
-        color: #fff;
-        font-family: sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+/* 1024px va kichikroq ekranlar uchun */
+@media screen and (max-width: 1024px) {
+    .bannerParent {
+        flex-direction: column;
+    }
+
+    .bannerParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .bannerTitle, .bannerText {
+        max-width: 600px;
+        text-align: center;
+    }
+}
+
+/* 800px va kichikroq ekranlar uchun */
+@media screen and (max-width: 800px) {
+    .bannerParent {
+        flex-direction: column;
+    }
+
+    .bannerParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .bannerTitle, .bannerText {
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+/* 768px va kichikroq ekranlar uchun */
+@media screen and (max-width: 768px) {
+    .bannerParent {
+        flex-direction: column;
+    }
+
+    .bannerParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .bannerTitle, .bannerText {
+        max-width: 450px;
+        text-align: center;
+    }
+}
+
+/* 600px va kichikroq ekranlar uchun */
+@media screen and (max-width: 600px) {
+    .bannerParent {
+        flex-direction: column;
+    }
+
+    .bannerParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .bannerTitle, .bannerText {
+        max-width: 400px;
+        text-align: center;
+    }
+}
+
+/* 480px va kichikroq ekranlar uchun */
+@media screen and (max-width: 480px) {
+    .bannerParent {
+        flex-direction: column;
+    }
+
+    .bannerParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .bannerTitle, .bannerText {
+        max-width: 350px;
+        text-align: center;
+    }
+}
+
+/* 375px va kichikroq ekranlar uchun */
+@media screen and (max-width: 375px) {
+    .bannerParent {
+        flex-direction: column;
+    }
+
+    .bannerParent .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .bannerTitle, .bannerText {
+        max-width: 300px;
+        text-align: center;
     }
 }

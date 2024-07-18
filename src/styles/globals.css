@@ -65,6 +65,7 @@
 
 
 .BtnLink{
+   padding: 0 40px;
     text-decoration: none;
     font-family: Unbounded;
     display: flex;
@@ -75,6 +76,7 @@
     font-weight: 500;
     color: white;
     text-align: center;
+    align-items: center;
 }
 
 .navbarBtn{
@@ -131,7 +133,7 @@
 .navbar-toggler{
     display: none;
 }
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
     .navbar{
         max-width: 1280px;
         margin: auto;
@@ -210,4 +212,142 @@
         display: none;
     }
 }
-    
+     */
+/* 1024px va kichikroq ekranlar uchun */
+@media screen and (max-width: 1180px) {
+    .navbar{
+        max-width: 1180px;
+    }
+    .navbar-toggler{
+        display: flex;
+     }
+     .ul{
+         display: none;
+     }
+     .navbarBtn{
+         display: none;
+     }
+}
+
+/* 800px va kichikroq ekranlar uchun */
+@media screen and (max-width: 800px) {
+    .navbar{
+        max-width: 800px;
+    }
+    .navbarLogo{
+        width: 200px;
+        height: auto;
+    }
+    .ul {
+        gap: 15px;
+    }
+    .navbarBtn, .navbarBtnn {
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .body {
+        max-width: 800px;
+    }
+}
+
+/* 768px va kichikroq ekranlar uchun */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    .navbarLogo {
+        width: 180px;
+        height: auto;
+    }
+    .ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+    .navbarBtn, .navbarBtnn {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .select {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .body {
+        max-width: 768px;
+        padding: 10px;
+    }
+}
+
+/* 600px va kichikroq ekranlar uchun */
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 10px;
+    }
+    .navbarLogo {
+        width: 160px;
+        height: auto;
+    }
+    .ul {
+        gap: 8px;
+    }
+    .navbarBtn, .navbarBtnn {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+    }
+    .select {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .body {
+        max-width: 600px;
+        padding: 5px;
+    }
+}
+
+/* 480px va kichikroq ekranlar uchun */
+@media screen and (max-width: 480px) {
+    .navbarLogo {
+        width: 140px;
+        height: auto;
+    }
+    .ul {
+        gap: 5px;
+    }
+    .navbarBtn, .navbarBtnn {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+    .body {
+        max-width: 480px;
+        padding: 5px;
+    }
+}
+
+/* 375px va kichikroq ekranlar uchun */
+@media screen and (max-width: 375px) {
+    .navbarLogo {
+        width: 120px;
+        height: auto;
+    }
+    .ul {
+        gap: 3px;
+    }
+    .navbarBtn, .navbarBtnn {
+        width: 100%;
+        height: 35px;
+        font-size: 14px;
+    }
+    .body {
+        max-width: 375px;
+        padding: 5px;
+    }
+}

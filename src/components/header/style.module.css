@@ -1,17 +1,12 @@
-
 /* font */
 
-
-
 /* header */
-.contaiener {
+.container {
     max-width: 1440px;
     width: 100%;
     margin: auto;
-
 }
 
-/* header */
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,6 +16,7 @@
     padding: 80px 0 0 0;
     position: relative;
 }
+
 .headerCaptionTitle {
     max-width: 650px;
     font-size: 70px;
@@ -29,6 +25,7 @@
     font-family: Unbounded, sans-serif;
     font-weight: 500;
 }
+
 .headerCaptionText {
     max-width: 400px;
     font-family: sans-serif;
@@ -38,11 +35,13 @@
     margin-top: 50px;
     margin-bottom: 150px;
 }
+
 .headerImg {
     max-width: 674px;
     width: auto;
     height: 540px;
 }
+
 .headerImgPos {
     position: absolute;
     top: 205px;
@@ -50,6 +49,7 @@
     width: 308px;
     height: 240px;
 }
+
 /* about */
 .aboutParent {
     display: flex;
@@ -58,6 +58,7 @@
     margin: auto;
     padding: 80px 0;
 }
+
 .aboutTitle {
     width: 100%;
     display: flex;
@@ -71,14 +72,17 @@
     font-weight: 700;
     text-transform: capitalize;
 }
+
 .aboutCardParent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .aboutCardImg {
     width: 80px;
     height: 80px;
 }
+
 .aboutCardTitle {
     max-width: 360px;
     color: #020c31;
@@ -90,6 +94,7 @@
     text-transform: capitalize;
     margin-bottom: 20px;
 }
+
 .aboutCardText {
     width: 300px;
     color: #676d83;
@@ -99,28 +104,49 @@
     font-weight: 400;
     line-height: 24px;
 }
+@media screen and (max-width: 1210px) {
+    .headerCaptionTitle {
+        font-size: 48px;
+        line-height: 56px;
+    }
 
-@media screen and (max-width:1210px){
-    .headerImg{
+    .headerCaptionText {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    .aboutCardTitle {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .aboutCardText {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .headerImg {
         display: none;
     }
-    .header{
+    .header {
         display: flex;
         flex-direction: row;
-    margin: auto;
-
-    position: relative;
+        margin: auto;
+        position: relative;
     }
-    .headerParent{
+    .headerParent {
         display: flex;
     }
-    .headerParent .container{
-        width: 1210px;
+    .headerParent .container {
+        width: 980px;
         max-width: 90%;
         margin: auto;
-
     }
-    .headerCaption{
+    .headerCaption {
         width: 100%;
         max-width: 90%;
         background-repeat: no-repeat;
@@ -133,36 +159,112 @@
     }
 
     .headerCaptionTitle {
-        
-        max-width: 900px;
-        font-size: 70px;
+        max-width: 800px;
+        font-size: 50px;
         min-height: 0;
         color: white;
         font-family: Unbounded, sans-serif;
         font-weight: 500;
     }
+
     .headerCaptionText {
-        max-width: 900px;
+        max-width: 800px;
         font-family: sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         color: white;
         margin-top: 50px;
         margin-bottom: 150px;
     }
-    
 
-    .headerImgPos{
-        display: none;;
+    .headerImgPos {
+        display: none;
     }
-    .aboutCardParent{
+
+    .aboutCardParent {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width:635px) {
-    .aboutCardParent{
+
+@media screen and (max-width: 635px) {
+    .headerCaptionTitle {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .headerCaptionText {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    .aboutCardTitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .aboutCardText {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .aboutCardParent {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headerCaptionTitle {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .headerCaptionText {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+
+    .aboutCardTitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .aboutCardText {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .aboutCardParent {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .headerCaptionTitle {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .headerCaptionText {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .aboutCardTitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .aboutCardText {
+        font-size: 9px;
+        line-height: 14px;
     }
 }
