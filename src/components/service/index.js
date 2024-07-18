@@ -19,7 +19,7 @@ const Service = () => {
                 <div className={cls.serviceCard}>
                     <img
                         src="https://www.dezinfeksiyatashkent.uz/assets/dizinfeksiya-52660f2d.png"
-                        alt=""
+                        alt="dizinfeksiyat"
                         className={cls.serviceCardImg}
                     />
                     <div className={cls.serviceCardMain}>
@@ -32,7 +32,7 @@ const Service = () => {
                 <div className={cls.serviceCard}>
                     <img
                         src="https://www.dezinfeksiyatashkent.uz/assets/dezinyeksiya-bea8e70f.png"
-                        alt=""
+                        alt="dizinyeksiyatashkent"
                         className={cls.serviceCardImg}
                     />
                     <div className={cls.serviceCardMain}>
@@ -45,7 +45,7 @@ const Service = () => {
                 <div className={cls.serviceCard}>
                     <img
                         src="https://www.dezinfeksiyatashkent.uz/assets/derazatsiya-83b522bf.png"
-                        alt=""
+                        alt="dezinfeksiyatashkent"
                         className={cls.serviceCardImg}
                     />
                     <div className={cls.serviceCardMain}>
@@ -71,7 +71,7 @@ const Service = () => {
                     <button className={cls.serviceTypeCardBtn}><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/klopi-6c1f42ef.jpg"
-                    alt=""
+                    alt="dizkent"
                     className={cls.serviceTypeCardimg}
                 />
             </div>
@@ -81,7 +81,7 @@ const Service = () => {
                 <button className={cls.serviceTypeCardBtn}><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/tarakan-d8b430bd.jpg"
-                    alt=""
+                    alt="tarakan-d8b430bd"
                     className={cls.serviceTypeCardimg}
                 />
             </div>
@@ -94,7 +94,7 @@ const Service = () => {
                 <button className={cls.serviceTypeCardBtn}><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/skarpion-6902a7a9.jpg"
-                    alt=""
+                    alt="dizkent"
                     className={cls.serviceTypeCardimg}
                 />
             </div>
@@ -107,7 +107,7 @@ const Service = () => {
                     <button className={cls.serviceTypeCardBtn}><a href="#contact"className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/grizuni-de8c9315.jpg"
-                    alt=""
+                    alt="dezinfeksiyatashkent"
                     className={cls.serviceTypeCardimg}
                 />
             </div>
@@ -120,7 +120,7 @@ const Service = () => {
                     <button className={cls.serviceTypeCardBtn}><a href="#contact" className="BtnLink">{t("bog'lanish")}</a></button>
                 <img
                     src="https://www.dezinfeksiyatashkent.uz/assets/bloxi-7e06d020.jpg"
-                    alt=""
+                    alt="dizinfeksiyatashkent"
                     className={cls.serviceTypeCardimg}
                 />
             </div>

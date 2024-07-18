@@ -39,8 +39,8 @@ export default function Header() {
                             {t("headerCaptionText")}
                         </p>
                         <img
-                            src="../../../public/headerlogo.svg"
-                            alt=""
+                            src="headerlogo.svg"
+                            alt="header logo"
                             className={cls.headerImgPos}
                         />
                         <button className="navbarBtnn">
@@ -49,7 +49,7 @@ export default function Header() {
                     </div>
                     <img
                         src="https://www.dezinfeksiyatashkent.uz/assets/hero-9df3d259.jpg"
-                        alt=""
+                        alt="dizinfeksiyatashkent"
                         className={cls.headerImg}
                     />
                 </div>
@@ -57,9 +57,10 @@ export default function Header() {
                     <p className={cls.aboutTitle}>{t("biz")}</p>
                     <div className={cls.aboutCardParent}>
                         <div className={cls.aboutCard}>
+                            <headImg className={cls.aboutCardImg}/>
                             <img
-                                src="../../../public/mask.svg"
-                                alt=""
+                                src="mask.svg"
+                                alt="about card"
                                 className={cls.aboutCardImg}
                             />
                             <p className={cls.aboutCardTitle}>
@@ -71,8 +72,8 @@ export default function Header() {
                         </div>
                         <div className={cls.aboutCard}>
                             <img
-                                src="../../../public/about.svg"
-                                alt=""
+                                src="about.svg"
+                                alt="aboutCard"
                                 className="aboutCardImg"
                             />
                             <p className={cls.aboutCardTitle}>
@@ -84,8 +85,8 @@ export default function Header() {
                         </div>
                         <div className="aboutCard">
                             <img
-                                src="../../../public/about1.svg"
-                                alt=""
+                                src="about1.svg"
+                                alt="about card image"
                                 className="aboutCardImg"
                             />
                             <p className={cls.aboutCardTitle}>

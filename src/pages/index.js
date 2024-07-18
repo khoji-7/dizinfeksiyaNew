@@ -22,7 +22,7 @@ export default function Home() {
           <div class="container-fluid">
             <img
               src="https://www.dezinfeksiyatashkent.uz/assets/dez_logo2-5b433e48.png"
-              alt=""
+              alt="dezinfeksiyatashkent logo"
               className="navbarLogo"
             />
             <ul className="ul">
