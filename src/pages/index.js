@@ -54,46 +54,46 @@ export default function Home() {
               </button>
             </div>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar"
               aria-controls="offcanvasNavbar"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
             <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
+              className="offcanvas offcanvas-end"
+              tabIndex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
-              <div class="offcanvas-body">
+              <div className="offcanvas-body">
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 ></button>
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
+                <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li className="nav-item">
                     <a className="links" href="#header">
                       {t("Asosiy")}
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <a href="#about" className="links">
                      {t("biz")}
                     </a>
                   </li>
 
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <a href="#service" className="links">
                       {t("xizmatlar")}
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <a href="#faq" className="links">
                       {t("faq")}
                     </a>

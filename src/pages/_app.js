@@ -1,8 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
-import "./i18n.js";
+import "../../public/locales/i18n.jsx";
 import 'aos/dist/aos.css'; // AOS CSS
 import AOS from 'aos'; // AOS JS
+import useSWR from 'swr'
 
 import { useEffect } from "react";
 
