@@ -175,6 +175,15 @@
     .serviceTypeCardParent {
         grid-template-columns: repeat(2, 1fr);
     }
+    .serviceTypeCardimg {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 330px;
+        left: 250px;
+    }
+    
 }
 
 /* 800px yoki kichikroq ekranlar uchun */
@@ -216,6 +225,17 @@
         width: 60px;
         height: 60px;
     }
+    .serviceTypeCard {
+        position: relative;
+        margin:auto;
+    }
+
+    .serviceTypeCardimg {
+        top: 55px;
+        left: 120px;
+        width: 100px;
+        height: 100px;
+    }
 }
 
 /* 600px yoki kichikroq ekranlar uchun */
@@ -237,6 +257,16 @@
     .serviceCardImg {
         max-width: 150px;
         max-height: 150px;
+    }
+    .serviceTypeCard {
+        position: relative;
+    }
+
+    .serviceTypeCardimg {
+        top: 60px;
+        left: 120px;
+        width: 80px;
+        height: 80px;
     }
 }
 
