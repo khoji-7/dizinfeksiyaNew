@@ -199,6 +199,9 @@
         flex-direction: column;
     }
 
+    .serviceTypeCardParent{
+        gap: 20px;
+    }
     .service {
         margin: auto;
         width: 100%;
@@ -328,13 +331,14 @@
         width: 90%;
         margin: auto;
         position: relative;
+        height: auto;
     }
 
     .serviceTypeCardimg {
         top: 50px;
         left: 120px;
-        width: 55px;
-        height: 55px;
+        width: 35px;
+        height: 35px;
     }
     .serviceTypeCardTitle{
         font-size: 24px;
@@ -350,15 +354,31 @@
         font-size: 12px;
         line-height: 18px;
     }
+    .serviceCardParent{ 
+        gap: 10px;
+    }
 
     .serviceCard {
         max-width: 280px;
         align-items: center;
         text-align: center;
+        padding: 10px;
+        margin: 5px;
     }
 
     .serviceCardImg {
         max-width: 80px;
         max-height: 80px;
+    }
+    .serviceCardMainTitle{
+        max-width: 270px;    
+        margin: auto;  
+        font-size: 20px;
+
+    }
+    .serviceCardMainText{
+        font-size: 12px;  
+        max-width: 270px;    
+        margin: auto;  
     }
 }

@@ -15,8 +15,7 @@ export default function Header() {
         //     easing: 'ease-out',
         //     delay: 200,
         // });
-
-        AOS.refresh(); // AOSni yangilash, animatsiyalarni qayta yuklash uchun
+         // AOSni yangilash, animatsiyalarni qayta yuklash uchun
     }, []); // bo'sh array kiritilgan
 
     const { t } = useTranslation();
@@ -35,7 +34,10 @@ export default function Header() {
                         >
                             {t("Dizenfeksiya")}
                         </h1>
-                        <p className={cls.headerCaptionText}>
+                        <p className={cls.headerCaptionText}  data-aos="fade-right"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="100"
+                            data-aos-duration="1000">
                             {t("headerCaptionText")}
                         </p>
                         <img
@@ -43,8 +45,11 @@ export default function Header() {
                             alt="header logo"
                             className={cls.headerImgPos}
                         />
-                        <button className="navbarBtnn">
-                            <a href="#contact" className="BtnLink">{t("bog'lanish")}</a>
+                        <button className="navbarBtnn"  data-aos="fade-right"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="100"
+                            data-aos-duration="1000">
+                            <a href="#contact" className="BtnLink" >{t("bog'lanish")}</a>
                         </button>
                     </div>
                     <img
@@ -55,7 +60,10 @@ export default function Header() {
                 </div>
                 <div className={cls.aboutParent} id="about">
                     <p className={cls.aboutTitle}>{t("biz")}</p>
-                    <div className={cls.aboutCardParent}>
+                    <div className={cls.aboutCardParent}  data-aos="fade-right"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="100"
+                            data-aos-duration="1000">
                         <div className={cls.aboutCard}>
                             <headImg className={cls.aboutCardImg}/>
                             <img

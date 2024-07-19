@@ -33,7 +33,7 @@
     font-weight: 500;
     color: #272121;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .headerImg {
@@ -114,7 +114,7 @@
         font-size: 18px;
         line-height: 28px;
         margin-top: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
     }
 
     .aboutCardTitle {
@@ -174,7 +174,7 @@
         font-weight: 500;
         color: white;
         margin-top: 50px;
-        margin-bottom: 150px;
+        margin-bottom: 50px;
     }
 
     .headerImgPos {
@@ -197,7 +197,7 @@
         font-size: 16px;
         line-height: 24px;
         margin-top: 20px;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
 
     .aboutCardTitle {
@@ -266,5 +266,8 @@
     .aboutCardText {
         font-size: 9px;
         line-height: 14px;
+    }
+    .header{
+        padding: 20px 0;
     }
 }

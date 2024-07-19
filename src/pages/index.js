@@ -51,7 +51,7 @@ export default function Home() {
                 <option value="en">english</option>
               </select>
               <button className="navbarBtn">
-                <a href="#service" className="BtnLink">{t("bog'lanish")}</a>
+                <a href="#contact" className="BtnLink">{t("bog'lanish")}</a>
               </button>
             </div>
             <button
