@@ -13,9 +13,9 @@ function Faq() {
             <div className={cls.acor}>
                 <div className='accordion' id='accordionExample'>
                     <div className='accordion-item'>
-                        <h2 class='accordion-header'>
+                        <h2 class={cls.accordionHeader}>
                             <button
-                                className='accordion-button'
+                                className={cls.accordionButton}
                                 type='button'
                                 data-bs-toggle='collapse'
                                 data-bs-target='#collapseOne'
@@ -36,9 +36,9 @@ function Faq() {
                         </div>
                     </div>
                     <div className='accordion-item'>
-                        <h2 className='accordion-header'>
+                        <h2 className={cls.accordionHeader}>
                             <button
-                                className='accordion-button collapsed'
+                                className={cls.accordionButton}
                                 type='button'
                                 data-bs-toggle='collapse'
                                 data-bs-target='#collapseTwo'
@@ -59,9 +59,9 @@ function Faq() {
                         </div>
                     </div>
                     <div className='accordion-item'>
-                        <h2 className='accordion-header'>
+                        <h2 className={cls.accordionHeader}>
                             <button
-                                className='accordion-button collapsed'
+                                className={cls.accordionButton}
                                 type='button'
                                 data-bs-toggle='collapse'
                                 data-bs-target='#collapseThree'

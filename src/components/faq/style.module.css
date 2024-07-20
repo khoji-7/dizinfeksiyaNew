@@ -12,13 +12,52 @@
     max-width: 1100px;
     width: 100%;
 }
-.accordion-button collapsed{
-    color: rgb(69, 66, 66);
-    
-}
-.accordion-body{
-    color: rgb(159, 33, 33);
-}
+
+
+/* style.module.css */
+.accordion-header {
+    width: 90%;
+    background-color: #D0E4FF; /* Title qismining rangi */
+    color: #000; /* Matn rangi */
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .accordionButton {
+    max-width: 1440px;
+    width: 100%;
+
+    background-color: #D0E4FF;
+    color: #000; /* Accordion button matn rangi */
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: left;
+  }
+  
+  .accordionButton:not(.collapsed) {
+    background-color: #D0E4FF;
+    color: #000; /* Expanded state matn rangi */
+  }
+  
+  .accordionButton:hover {
+    background: linear-gradient(135deg, #C0D4FF, #90B4FF); /* Hover state gradient background rangi */
+    color: #000; /* Hover state matn rangi */
+  }
+  
+  .accordion-body {
+    background-color: #F0F8FF; /* Body qismining background rangi */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #D0E4FF;
+    margin-top: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .accordion-body:hover {
+    background-color: #E0F0FF; /* Body qismining hover state background rangi */
+  }
+  
 .faqTitle {
     color: #020c31;
     font-family: Unbounded;

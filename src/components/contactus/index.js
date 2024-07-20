@@ -1,8 +1,13 @@
+import React, { useEffect, useRef, useState } from 'react';
 import cls from "./style.module.css";
 import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
   const { t } = useTranslation();
+  const [message, setMessage] = useState('');
+  const modalRef = useRef(null);
+  const btnRef = useRef(null);
+  const spanRef = useRef(null);
 
   async function sendTelegramMessage() {
     const botToken = "7058068827:AAEwJvDklNcroajvm3PUIx9SvYgbOVAXG1k";
@@ -36,13 +41,40 @@ const ContactUs = () => {
         }
       );
       if (response.status === 200) {
-        alert("Xabaringiz yetkazildi");
-        window.location.reload();
+        setMessage('Xabaringiz yetkazildi');
+        modalRef.current.style.display = "block";
       }
     } catch (error) {
       console.error("Xatolik:", error);
     }
   }
+
+  useEffect(() => {
+    const modal = modalRef.current;
+    const btn = btnRef.current;
+    const span = spanRef.current;
+
+    btn.onclick = () => {
+      modal.style.display = "block";
+    }
+
+    span.onclick = () => {
+      modal.style.display = "none";
+    }
+
+    window.onclick = (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // Cleanup function
+    return () => {
+      btn.onclick = null;
+      span.onclick = null;
+      window.onclick = null;
+    }
+  }, []);
 
   return (
     <div className={cls.contactParent} id="contact">
@@ -68,6 +100,8 @@ const ContactUs = () => {
             className={cls.contactBtn}
             type="submit"
             onClick={sendTelegramMessage}
+            id="myBtn"
+            ref={btnRef}
           >
             {t("Yuborish")}
           </button>
@@ -78,7 +112,14 @@ const ContactUs = () => {
           className={cls.contactImg}
         />
       </div>
+      <div id="myModal" className={cls.modal} ref={modalRef}>
+        <div className={cls.modalContent}>
+          <span className={cls.close} ref={spanRef}>&times;</span>
+          <p>{message}</p>
+        </div>
+      </div>
     </div>
   );
 };
+
 export default ContactUs;
